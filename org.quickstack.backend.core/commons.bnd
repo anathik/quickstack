@@ -1,0 +1,5 @@
+Bundle-Version: 1.0.0.${tstamp}
+Export-Package: \
+	org.quickstack.core.commons.util.bean,\
+	org.quickstack.core.commons.util,\
+	org.quickstack.core.commons.util.jpa

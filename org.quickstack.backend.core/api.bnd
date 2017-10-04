@@ -1,0 +1,5 @@
+Bundle-Version: 1.0.0.${tstamp}
+Export-Package: \
+	org.quickstack.core.api.dao,\
+	org.quickstack.core.api.service,\
+	org.quickstack.core.api

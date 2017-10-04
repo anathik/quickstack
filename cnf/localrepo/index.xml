@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<repository increment="1507077258000" name="Local" xmlns="http://www.osgi.org/xmlns/repository/v1.0.0">
+  <resource>
+    <capability namespace="osgi.identity">
+      <attribute name="osgi.identity" value="net.sf.dozer.dozer-osgi"/>
+      <attribute name="type" value="osgi.bundle"/>
+      <attribute name="version" type="Version" value="5.5.1"/>
+    </capability>
+    <capability namespace="osgi.content">
+      <attribute name="osgi.content" value="eb38728adec950c94bf1faf53bceaff4f6e0cd7c13c3ee2cbb24eb57b696d357"/>
+      <attribute name="url" value="net.sf.dozer.dozer-osgi/net.sf.dozer.dozer-osgi-5.5.1.jar"/>
+      <attribute name="size" type="Long" value="762835"/>
+      <attribute name="mime" value="application/vnd.osgi.bundle"/>
+    </capability>
+    <capability namespace="osgi.wiring.bundle">
+      <attribute name="osgi.wiring.bundle" value="net.sf.dozer.dozer-osgi"/>
+      <attribute name="bundle-version" type="Version" value="5.5.1"/>
+    </capability>
+    <capability namespace="osgi.wiring.host">
+      <attribute name="osgi.wiring.host" value="net.sf.dozer.dozer-osgi"/>
+      <attribute name="bundle-version" type="Version" value="5.5.1"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.dozer"/>
+      <attribute name="version" type="Version" value="5.5.1"/>
+      <attribute name="bundle-symbolic-name" value="net.sf.dozer.dozer-osgi"/>
+      <attribute name="bundle-version" type="Version" value="5.5.1"/>
+      <directive name="uses" value="org.dozer.cache,org.dozer.classmap,org.dozer.event,org.dozer.factory,org.dozer.fieldmap,org.dozer.loader.api,org.dozer.metadata,org.dozer.stats"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.dozer.builder"/>
+      <attribute name="version" type="Version" value="5.5.1"/>
+      <attribute name="bundle-symbolic-name" value="net.sf.dozer.dozer-osgi"/>
+      <attribute name="bundle-version" type="Version" value="5.5.1"/>
+      <directive name="uses" value="org.dozer,org.dozer.factory"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.dozer.cache"/>
+      <attribute name="version" type="Version" value="5.5.1"/>
+      <attribute name="bundle-symbolic-name" value="net.sf.dozer.dozer-osgi"/>
+      <attribute name="bundle-version" type="Version" value="5.5.1"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.dozer.classmap"/>
+      <attribute name="version" type="Version" value="5.5.1"/>
+      <attribute name="bundle-symbolic-name" value="net.sf.dozer.dozer-osgi"/>
+      <attribute name="bundle-version" type="Version" value="5.5.1"/>
+      <directive name="uses" value="org.dozer.converters,org.dozer.fieldmap"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.dozer.classmap.generator"/>
+      <attribute name="version" type="Version" value="5.5.1"/>
+      <attribute name="bundle-symbolic-name" value="net.sf.dozer.dozer-osgi"/>
+      <attribute name="bundle-version" type="Version" value="5.5.1"/>
+      <directive name="uses" value="org.dozer.classmap"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.dozer.config"/>
+      <attribute name="version" type="Version" value="5.5.1"/>
+      <attribute name="bundle-symbolic-name" value="net.sf.dozer.dozer-osgi"/>
+      <attribute name="bundle-version" type="Version" value="5.5.1"/>
+      <directive name="uses" value="org.dozer.loader.xml,org.dozer.util"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.dozer.converters"/>
+      <attribute name="version" type="Version" value="5.5.1"/>
+      <attribute name="bundle-symbolic-name" value="net.sf.dozer.dozer-osgi"/>
+      <attribute name="bundle-version" type="Version" value="5.5.1"/>
+      <directive name="uses" value="org.apache.commons.beanutils,org.dozer,org.dozer.cache"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.dozer.event"/>
+      <attribute name="version" type="Version" value="5.5.1"/>
+      <attribute name="bundle-symbolic-name" value="net.sf.dozer.dozer-osgi"/>
+      <attribute name="bundle-version" type="Version" value="5.5.1"/>
+      <directive name="uses" value="org.dozer,org.dozer.classmap,org.dozer.fieldmap"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.dozer.factory"/>
+      <attribute name="version" type="Version" value="5.5.1"/>
+      <attribute name="bundle-symbolic-name" value="net.sf.dozer.dozer-osgi"/>
+      <attribute name="bundle-version" type="Version" value="5.5.1"/>
+      <directive name="uses" value="org.dozer"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.dozer.fieldmap"/>
+      <attribute name="version" type="Version" value="5.5.1"/>
+      <attribute name="bundle-symbolic-name" value="net.sf.dozer.dozer-osgi"/>
+      <attribute name="bundle-version" type="Version" value="5.5.1"/>
+      <directive name="uses" value="org.dozer.classmap,org.dozer.propertydescriptor"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.dozer.inject"/>
+      <attribute name="version" type="Version" value="5.5.1"/>
+      <attribute name="bundle-symbolic-name" value="net.sf.dozer.dozer-osgi"/>
+      <attribute name="bundle-version" type="Version" value="5.5.1"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.dozer.jmx"/>
+      <attribute name="version" type="Version" value="5.5.1"/>
+      <attribute name="bundle-symbolic-name" value="net.sf.dozer.dozer-osgi"/>
+      <attribute name="bundle-version" type="Version" value="5.5.1"/>
+      <directive name="uses" value="javax.management,org.dozer.stats"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.dozer.loader"/>
+      <attribute name="version" type="Version" value="5.5.1"/>
+      <attribute name="bundle-symbolic-name" value="net.sf.dozer.dozer-osgi"/>
+      <attribute name="bundle-version" type="Version" value="5.5.1"/>
+      <directive name="uses" value="org.dozer,org.dozer.classmap,org.dozer.converters,org.dozer.fieldmap"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.dozer.loader.api"/>
+      <attribute name="version" type="Version" value="5.5.1"/>
+      <attribute name="bundle-symbolic-name" value="net.sf.dozer.dozer-osgi"/>
+      <attribute name="bundle-version" type="Version" value="5.5.1"/>
+      <directive name="uses" value="org.dozer,org.dozer.classmap,org.dozer.loader"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.dozer.loader.xml"/>
+      <attribute name="version" type="Version" value="5.5.1"/>
+      <attribute name="bundle-symbolic-name" value="net.sf.dozer.dozer-osgi"/>
+      <attribute name="bundle-version" type="Version" value="5.5.1"/>
+      <directive name="uses" value="javax.xml.parsers,org.dozer.classmap,org.dozer.loader,org.w3c.dom,org.xml.sax"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.dozer.metadata"/>
+      <attribute name="version" type="Version" value="5.5.1"/>
+      <attribute name="bundle-symbolic-name" value="net.sf.dozer.dozer-osgi"/>
+      <attribute name="bundle-version" type="Version" value="5.5.1"/>
+      <directive name="uses" value="org.dozer,org.dozer.classmap,org.dozer.fieldmap"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.dozer.osgi"/>
+      <attribute name="version" type="Version" value="5.5.1"/>
+      <attribute name="bundle-symbolic-name" value="net.sf.dozer.dozer-osgi"/>
+      <attribute name="bundle-version" type="Version" value="5.5.1"/>
+      <directive name="uses" value="org.dozer.util,org.osgi.framework"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.dozer.propertydescriptor"/>
+      <attribute name="version" type="Version" value="5.5.1"/>
+      <attribute name="bundle-symbolic-name" value="net.sf.dozer.dozer-osgi"/>
+      <attribute name="bundle-version" type="Version" value="5.5.1"/>
+      <directive name="uses" value="org.dozer,org.dozer.fieldmap"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.dozer.stats"/>
+      <attribute name="version" type="Version" value="5.5.1"/>
+      <attribute name="bundle-symbolic-name" value="net.sf.dozer.dozer-osgi"/>
+      <attribute name="bundle-version" type="Version" value="5.5.1"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.dozer.util"/>
+      <attribute name="version" type="Version" value="5.5.1"/>
+      <attribute name="bundle-symbolic-name" value="net.sf.dozer.dozer-osgi"/>
+      <attribute name="bundle-version" type="Version" value="5.5.1"/>
+      <directive name="uses" value="org.dozer,org.dozer.cache,org.dozer.classmap,org.dozer.converters,org.dozer.fieldmap,org.dozer.propertydescriptor"/>
+    </capability>
+    <capability namespace="osgi.contract">
+      <attribute name="osgi.contract" value="OSGiFramework"/>
+      <directive name="uses" value="org.dozer,org.dozer.builder,org.dozer.cache,org.dozer.classmap,org.dozer.classmap.generator,org.dozer.config,org.dozer.converters,org.dozer.event,org.dozer.factory,org.dozer.fieldmap,org.dozer.inject,org.dozer.jmx,org.dozer.loader,org.dozer.loader.api,org.dozer.loader.xml,org.dozer.metadata,org.dozer.osgi,org.dozer.propertydescriptor,org.dozer.stats,org.dozer.util"/>
+    </capability>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=javax.el)"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=javax.management)"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=javax.xml.datatype)"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=javax.xml.parsers)"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.apache.commons.beanutils)(version&gt;=1.8.0)(!(version&gt;=2.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.apache.commons.beanutils.converters)(version&gt;=1.8.0)(!(version&gt;=2.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.apache.commons.lang3)(version&gt;=3.1.0)(!(version&gt;=4.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.apache.commons.lang3.builder)(version&gt;=3.1.0)(!(version&gt;=4.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.hibernate.proxy)"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.slf4j)(version&gt;=1.6.0)(!(version&gt;=2.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.w3c.dom)"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.xml.sax)"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.xml.sax.helpers)"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.springframework.beans.factory)"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.framework)(version&gt;=1.6.0)(!(version&gt;=2.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.springframework.core.io)"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+  </resource>
+</repository>
