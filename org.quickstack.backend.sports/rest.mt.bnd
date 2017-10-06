@@ -1,0 +1,4 @@
+Bundle-Activator: org.quickstack.sports.rest.osgi.Activator
+Private-Package: \
+	org.quickstack.sports.rest.osgi,\
+	org.quickstack.sports.rest
