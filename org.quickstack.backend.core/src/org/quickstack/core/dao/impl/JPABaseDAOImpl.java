@@ -17,11 +17,11 @@ import javax.persistence.criteria.Root;
 
 import org.osgi.service.log.LogService;
 import org.quickstack.core.api.ApplicationException;
-import org.quickstack.core.api.dao.IJPABaseDAO;
-import org.quickstack.core.api.dao.NoSuchModelException;
 import org.quickstack.core.model.JPABaseEntity;
 import org.apache.felix.dm.annotation.api.Component;
 import org.apache.felix.dm.annotation.api.ServiceDependency;
+import org.quickstack.core.api.dao.IJPABaseDAO;
+import org.quickstack.core.api.dao.NoSuchModelException;
 
 public abstract class JPABaseDAOImpl<T extends JPABaseEntity> implements IJPABaseDAO<T> {
 

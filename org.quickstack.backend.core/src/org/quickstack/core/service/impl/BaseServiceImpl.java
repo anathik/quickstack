@@ -16,10 +16,10 @@ import javax.persistence.criteria.ParameterExpression;
 import javax.persistence.criteria.Predicate;
 import javax.persistence.criteria.Root;
 
-import org.osgi.service.log.LogService;
-import org.quickstack.core.api.ApplicationException;
 import org.quickstack.core.api.dao.NoSuchModelException;
 import org.quickstack.core.api.service.IBaseService;
+import org.osgi.service.log.LogService;
+import org.quickstack.core.api.ApplicationException;
 import org.quickstack.core.model.JPABaseEntity;
 
 

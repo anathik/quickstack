@@ -36,3 +36,4 @@ target/
 .metadata
 generated/
 bin/
+/.recommenders/

@@ -15,11 +15,11 @@ import javax.persistence.criteria.Root;
 
 import org.osgi.service.log.LogService;
 import org.quickstack.core.api.ApplicationException;
-import org.quickstack.core.api.dao.ISuperDAO;
-import org.quickstack.core.api.dao.NoSuchModelException;
 import org.quickstack.core.model.SuperEntity;
 import org.apache.felix.dm.annotation.api.Component;
 import org.apache.felix.dm.annotation.api.ServiceDependency;
+import org.quickstack.core.api.dao.ISuperDAO;
+import org.quickstack.core.api.dao.NoSuchModelException;
 
 public abstract class SuperDAOImpl<T extends SuperEntity> implements ISuperDAO<T> {
 

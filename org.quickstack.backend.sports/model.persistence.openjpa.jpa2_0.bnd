@@ -1,0 +1,6 @@
+Bundle-Version: 1.0.0.${tstamp}
+Meta-Persistence: META-INF/persistence.xml
+Include-Resource: META-INF/persistence.xml=resources/jpa/qsdemo-persistence-openjpa.xml
+Private-Package: org.quickstack.sports.model.jpa.osgi
+Bundle-Activator: org.quickstack.sports.model.jpa.osgi.Activator
+Export-Package: org.quickstack.sports.model.jpa
