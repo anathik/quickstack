@@ -1,0 +1,5 @@
+Bundle-Activator: org.quickstack.sports.defaults.osgi.Activator
+Private-Package: \
+	org.quickstack.sports.defaults,\
+	org.quickstack.sports.defaults.osgi,\
+	org.gauntlet.problems.defaults.gdocs

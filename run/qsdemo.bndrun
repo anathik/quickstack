@@ -12,15 +12,14 @@
 -runvm: -ea -Dorg.owasp.esapi.resources=load
 
 -runbundles:  \
-	,\
 	slf4j.api;version=1.7.21,\
 	slf4j.simple;version=1.7.21,\
 	org.apache.felix.log;version=1.0.1,\
 	,\
-	org.apache.felix.gogo.runtime,\
-	org.apache.felix.gogo.shell,\
+	org.apache.felix.gogo.runtime;version='[0.16.0,0.16.3)',\
+	org.apache.felix.gogo.shell;version='[0.12.0,0.13.0)',\
 	org.apache.felix.shell.remote,\
-	org.apache.felix.gogo.command,\
+	org.apache.felix.gogo.command;version='[0.16.0,0.17.0)',\
 	org.osgi.service.remoteserviceadmin;version='[1.1.0,1.2)',\
 	org.apache.felix.configadmin;version='[1.8.0,1.9)',\
 	org.apache.felix.eventadmin;version=1.2.2,\
@@ -37,9 +36,9 @@
 	com.springsource.org.json;version=1.0.0,\
 	org.apache.felix.dependencymanager;version='[3,4)',\
 	org.apache.felix.dependencymanager.runtime;version='[3,4)',\
-	org.apache.felix.dependencymanager;version='[4.1,5)',\
-	org.apache.felix.dependencymanager.runtime;version='[4,5)',\
-	org.apache.felix.dependencymanager.shell;version='[4,5)',\
+	org.apache.felix.dependencymanager;version='[4.3,4.4)',\
+	org.apache.felix.dependencymanager.runtime;version='[4.0.3,4.0.4)',\
+	org.apache.felix.dependencymanager.shell;version='[4.0.4,4.0.5)',\
 	org.apache.felix.http.api;version='[2.3,2.4)',\
 	org.apache.felix.http.whiteboard;version='[2.3,2.4)',\
 	org.apache.felix.http.servlet-api;version='[1.1,1.2)',\
@@ -96,9 +95,11 @@
 	org.quickstack.backend.core.model;version=latest,\
 	,\
 	org.quickstack.backend.sports.api;version=latest,\
-	org.quickstack.backend.sports.dao.impl.mt;version=latest,\
-	org.quickstack.backend.sports.model.persistence.openjpa.jpa2_0.mt;version=latest,\
-	org.quickstack.backend.sports.rest.mt;version=latest
+	org.quickstack.backend.sports.dao.impl;version=latest,\
+	org.quickstack.backend.sports.model.persistence.openjpa.jpa2_0;version=latest,\
+	org.quickstack.backend.sports.rest;version=latest,\
+	,\
+	org.quickstack.backend.data.defaults.main;version=latest
 ## Uncomment if you need to change the HTTP port
 #-runproperties: org.osgi.service.http.port=8080
 -runproperties:  \

@@ -11,6 +11,11 @@ public class Team extends BaseEntity implements Serializable {
 	public Team() {
 		super();
 	}
+	
+	public Team(final String name) {
+		this();
+		setName(name);
+	}
 
 	public Set<Player> getPlayers() {
 		return players;

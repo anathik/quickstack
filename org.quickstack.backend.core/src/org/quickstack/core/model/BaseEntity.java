@@ -3,6 +3,7 @@ package org.quickstack.core.model;
 
 
 import java.util.Date;
+import java.util.UUID;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -47,8 +48,14 @@ public abstract class BaseEntity extends SuperEntity
     protected Long tenantId;
     
     protected boolean tenantWide = false;
+    
+    protected BaseEntity() {
+        generateUuid();
+    }
 
-
+    private void generateUuid() {
+        this.code = UUID.randomUUID().toString();
+    }
 
 	/**
      * Gets the value of the id property.
