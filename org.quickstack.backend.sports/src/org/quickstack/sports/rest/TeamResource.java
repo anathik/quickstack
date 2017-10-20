@@ -33,7 +33,7 @@ public class TeamResource {
 	@GET
 	@Path("{teamId}")
 	@Produces(MediaType.APPLICATION_JSON)
-	public Team getProblem(@PathParam("teamId") long teamId)
+	public Team getTeam(@PathParam("teamId") long teamId)
 			throws NoSuchModelException, ApplicationException {
 		return teamService.getByPrimary(teamId);
 	}

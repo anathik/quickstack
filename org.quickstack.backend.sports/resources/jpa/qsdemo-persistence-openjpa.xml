@@ -42,7 +42,7 @@
 		</non-jta-data-source>	       
          
         <!-- Based -->
-        <class>org.gauntlet.core.model.JPABaseEntity</class>
+        <class>org.quickstack.core.model.JPABaseEntity</class>
         
     	
     	<!-- Problem -->
