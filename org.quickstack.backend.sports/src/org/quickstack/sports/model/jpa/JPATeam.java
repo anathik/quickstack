@@ -3,7 +3,9 @@ package org.quickstack.sports.model.jpa;
 import java.io.Serializable;
 import java.util.Set;
 
+import javax.persistence.Basic;
 import javax.persistence.CascadeType;
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
 import javax.persistence.Inheritance;
@@ -18,10 +20,30 @@ import org.quickstack.core.model.JPABaseEntity;
 @Table(name="qsdemo_team")
 public class JPATeam extends JPABaseEntity implements Serializable {
 	
-	@OneToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
-	private Set<JPAPlayer> questions = new java.util.HashSet<JPAPlayer>();
+    @Basic
+    @Column(name = "rank")    
+    private Integer rank;
+	
+	@OneToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER, mappedBy="playsFor")
+	private Set<JPAPlayer> players = new java.util.HashSet<JPAPlayer>();
 
 	public JPATeam() {
 		super();
+	}
+
+	public Integer getRank() {
+		return rank;
+	}
+
+	public void setRank(Integer rank) {
+		this.rank = rank;
+	}
+
+	public Set<JPAPlayer> getPlayers() {
+		return players;
+	}
+
+	public void setPlayers(Set<JPAPlayer> players) {
+		this.players = players;
 	}
 }

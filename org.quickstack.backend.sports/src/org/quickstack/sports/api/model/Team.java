@@ -6,6 +6,8 @@ import java.util.Set;
 import org.quickstack.core.model.BaseEntity;
 
 public class Team extends BaseEntity implements Serializable {
+	private Integer rank;
+	
 	private Set<Player> players;
 	
 	public Team() {
@@ -16,6 +18,11 @@ public class Team extends BaseEntity implements Serializable {
 		this();
 		setName(name);
 	}
+	
+	public Team(final String name, final Integer rank) {
+		this(name);
+		setRank(rank);
+	}
 
 	public Set<Player> getPlayers() {
 		return players;
@@ -25,5 +32,11 @@ public class Team extends BaseEntity implements Serializable {
 		this.players = players;
 	}
 
-	
+	public Integer getRank() {
+		return rank;
+	}
+
+	public void setRank(Integer rank) {
+		this.rank = rank;
+	}
 }

@@ -21,7 +21,7 @@ import org.osgi.service.log.LogService;
 @SuppressWarnings("restriction")
 @Transactional
 public class TeamDAOImpl extends BaseServiceImpl implements ITeamDAOService {
-	//Problems
+	//Teams
 	private volatile LogService logger;
 	
 	private volatile EntityManager em;
@@ -67,24 +67,39 @@ public class TeamDAOImpl extends BaseServiceImpl implements ITeamDAOService {
 	
 	@Override
 	public Team getByPrimary(Long pk) throws ApplicationException, NoSuchModelException {
-		JPATeam jpaEntity = (JPATeam) super.findByPrimaryKey(JPATeam.class, pk);
+		JPATeam jpaEntity = getByPrimary_(pk);
 		return JPAEntityUtil.copy(jpaEntity, Team.class);
+	}
+	
+	private JPATeam getByPrimary_(Long pk) throws ApplicationException, NoSuchModelException {
+		JPATeam jpaEntity = (JPATeam) super.findByPrimaryKey(JPATeam.class, pk);
+		return jpaEntity;
 	}
 
 	@Override
 	public Team provide(Team record)
 			  throws ApplicationException {
-		Team existingTeam = getByCode(record.getCode());
+		Team existingTeam = getByName(record.getName());
 		if (Validator.isNull(existingTeam))
 		{
 			JPABaseEntity res = super.add(JPAEntityUtil.copy(record, JPATeam.class));
 			existingTeam = JPAEntityUtil.copy(res, Team.class);
 		}
-		else {
-			return update(record);
-		}
 
 		return existingTeam;
+	}
+	
+	@Override
+	public Team addPlayer(String name, Player player) throws ApplicationException, NoSuchModelException {
+		JPATeam jpaTeam = getByName_(name);
+		Player existingPlayer = getPlayerByName(player.getName());
+		if (existingPlayer == null) {
+			JPAPlayer jpaPlayer = JPAEntityUtil.copy(player, JPAPlayer.class);
+			jpaPlayer.setPlaysFor(jpaTeam);
+			jpaTeam.getPlayers().add(jpaPlayer);
+			jpaTeam =  (JPATeam) update(jpaTeam);
+		}
+		return  JPAEntityUtil.copy(jpaTeam, Team.class);
 	}
 	
 	@Override
@@ -114,6 +129,9 @@ public class TeamDAOImpl extends BaseServiceImpl implements ITeamDAOService {
 		return JPAEntityUtil.copy(jpaEntity, Team.class);
 	}
 	
+	public JPATeam getByName_(String name) throws ApplicationException {
+		return (JPATeam) super.findWithAttribute(JPATeam.class, String.class,"name", name);
+	}
 	
 	//Player
 	@Override 
@@ -200,6 +218,12 @@ public class TeamDAOImpl extends BaseServiceImpl implements ITeamDAOService {
 	
 	@Override
 	public void createDefaults() throws ApplicationException {
+	}
+
+	@Override
+	public Player updatePlayer(Player player) throws ApplicationException {
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 }

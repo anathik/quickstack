@@ -7,6 +7,7 @@ import org.quickstack.core.api.dao.NoSuchModelException;
 import org.quickstack.core.api.service.IBaseService;
 import org.quickstack.sports.api.model.Player;
 import org.quickstack.sports.api.model.Team;
+import org.quickstack.sports.model.jpa.JPAPlayer;
 
 public interface ITeamDAOService extends IBaseService {
 	// Team
@@ -15,6 +16,8 @@ public interface ITeamDAOService extends IBaseService {
 	public long countAll() throws ApplicationException;
 	
 	public Team provide(Team record) throws ApplicationException;
+	
+	public Team addPlayer(String name, Player player) throws ApplicationException, NoSuchModelException; 
 	
 	public Team update(Team record) throws ApplicationException;
 	
@@ -31,6 +34,8 @@ public interface ITeamDAOService extends IBaseService {
 	public List<Player> findAllProblemDifficulties(int start, int end) throws ApplicationException;
 	
 	public long countAllProblemDifficulties() throws ApplicationException;
+	
+	public Player updatePlayer(Player player) throws ApplicationException;
 	
 	public Player getPlayerByPrimary(Long pk)  throws ApplicationException, NoSuchModelException;
 	
