@@ -69,7 +69,6 @@ public class PlayerResource {
 	
 	/** Create Player by Name (String) and Rank (integer) : HTTPRequest **/
 	@PUT
-	@Path("{playerName}")
 	@Produces(MediaType.APPLICATION_JSON) 
 	public Player createPlayer(@PathParam("playerName") String playerName)
 			throws NoSuchModelException, ApplicationException {
